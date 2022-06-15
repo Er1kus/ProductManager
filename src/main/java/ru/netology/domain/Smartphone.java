@@ -15,4 +15,17 @@ public class Smartphone extends Product {
         return manufacture;
     }
 
+    @Override
+    public boolean matches(String search) {
+        if (super.matches(search)) {
+            return true;
+        }
+        if (getManufacture().contains(search)) {
+            return true;
+        }
+        return false;
+    }
+
 }
+
+
