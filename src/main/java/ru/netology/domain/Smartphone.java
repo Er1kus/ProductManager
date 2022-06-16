@@ -10,9 +10,4 @@ public class Smartphone extends Product {
         super(id, name, price);
         this.manufacture = manufacture;
     }
-
-    public String getManufacture() {
-        return manufacture;
-    }
-
 }
